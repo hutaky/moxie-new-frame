@@ -19,7 +19,7 @@ export const frames = createFrames({
             },
           }
         : {
-            hubHttpUrl: "http://localhost:3010/hub",
+            hubHttpUrl: "http://localhost:3000/",
           }),
     }),
     warpcastComposerActionState(),
