@@ -130,9 +130,9 @@ const frameHandler = frames(async (ctx) => {
   }
 
   const SplashScreen = () => (
-    <div tw="flex flex-col w-full h-full bg-green-50 text-purple-800 font-sans">
+    <div tw="flex flex-col w-full h-full bg-pink-50 text-blue-800 font-sans">
       <div tw="flex items-center flex-grow">
-        <div tw="flex flex-col items-center flex-grow rounded-lg border-2 border-red-800 mx-24 py-8 bg-green-50">
+        <div tw="flex flex-col items-center flex-grow rounded-lg border-2 border-blue-800 mx-24 py-8 bg-pink-50">
           <div tw="flex mb-6">
             <img
               src="https://storage.googleapis.com/papyrus_images/8ba13bd0410a9b2333784927e7c638ca"
@@ -145,7 +145,7 @@ const frameHandler = frames(async (ctx) => {
           <div tw="flex text-4xl p-2 rounded">Rank: --</div>
         </div>
       </div>
-      <div tw="flex justify-between bg-green-800 text-red mb-4 w-full px-4 py-1 text-center absolute top-50 p-10 bg-opacity-80">
+      <div tw="flex justify-between bg-pink-800 text-blue mb-4 w-full px-4 py-1 text-center absolute top-50 p-10 bg-opacity-80">
         <div tw="flex flex-col items-center w-full">
           <span tw="flex text-6xl  mb-4">Moxie Statistic Frame</span>
           <span tw="flex text-4xl ">
@@ -158,8 +158,8 @@ const frameHandler = frames(async (ctx) => {
 
   const ScoreScreen = () => {
     return (
-      <div tw="flex flex-col w-full h-full bg-green-50 text-red-800 font-sans">
-        <div tw="flex items-center px-8 pt-4 bg-green-50 justify-between mr-4">
+      <div tw="flex flex-col w-full h-full bg-pink-50 text-blue-800 font-sans">
+        <div tw="flex items-center px-8 pt-4 bg-pink-50 justify-between mr-4">
           <div tw="flex items-center">
             <img
               src={userData?.profileImageUrl}
