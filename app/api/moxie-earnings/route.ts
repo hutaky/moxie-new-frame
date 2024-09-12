@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
     );
 
     const [todayData] = await Promise.all([
-      fetchQuery(moxieQuery, { entityId, timeframe: "TODAY" }),
+      fetchQuery(moxieQuery, { entityId, timeframe: "This DAY" }),
     ]);
 
     if (todayData.error) {
@@ -85,7 +85,7 @@ export async function GET(req: NextRequest) {
       `Fetching Weekly Moxie earnings data from Airstack for entityId: ${entityId}`
     );
     const [weeklyData] = await Promise.all([
-      fetchQuery(moxieQuery, { entityId, timeframe: "WEEKLY" }),
+      fetchQuery(moxieQuery, { entityId, timeframe: "in 1 WEEK" }),
     ]);
 
     if (weeklyData.error) {
@@ -120,7 +120,7 @@ export async function GET(req: NextRequest) {
       `Fetching Lifetime Moxie earnings data from Airstack for entityId: ${entityId}`
     );
     const [lifetimeData] = await Promise.all([
-      fetchQuery(moxieQuery, { entityId, timeframe: "LIFETIME" }),
+      fetchQuery(moxieQuery, { entityId, timeframe: "TOTAL" }),
     ]);
 
     if (lifetimeData.error) {
