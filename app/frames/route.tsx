@@ -130,9 +130,9 @@ const frameHandler = frames(async (ctx) => {
   }
 
   const SplashScreen = () => (
-    <div tw="flex flex-col w-full h-full bg-pink-50 text-blue-800 font-sans">
+    <div tw="flex flex-col w-full h-full bg-green-50 text-purple-800 font-sans">
       <div tw="flex items-center flex-grow">
-        <div tw="flex flex-col items-center flex-grow rounded-lg border-2 border-blue-800 mx-24 py-8 bg-pink-50">
+        <div tw="flex flex-col items-center flex-grow rounded-lg border-2 border-red-800 mx-24 py-8 bg-green-50">
           <div tw="flex mb-6">
             <img
               src="https://storage.googleapis.com/papyrus_images/8ba13bd0410a9b2333784927e7c638ca"
@@ -145,11 +145,11 @@ const frameHandler = frames(async (ctx) => {
           <div tw="flex text-4xl p-2 rounded">Rank: --</div>
         </div>
       </div>
-      <div tw="flex justify-between bg-blue-800 text-white mb-4 w-full px-4 py-1 text-center absolute top-50 p-10 bg-opacity-80">
+      <div tw="flex justify-between bg-green-800 text-red mb-4 w-full px-4 py-1 text-center absolute top-50 p-10 bg-opacity-80">
         <div tw="flex flex-col items-center w-full">
-          <span tw="flex text-6xl  mb-4">Moxie Demo Frame</span>
+          <span tw="flex text-6xl  mb-4">Moxie Statistic Frame</span>
           <span tw="flex text-4xl ">
-            Use this to build your Moxie Stats Frame.
+            Use this as a base to check your earned Moxies.
           </span>
         </div>
       </div>
@@ -158,8 +158,8 @@ const frameHandler = frames(async (ctx) => {
 
   const ScoreScreen = () => {
     return (
-      <div tw="flex flex-col w-full h-full bg-pink-50 text-blue-800 font-sans">
-        <div tw="flex items-center px-8 pt-4 bg-pink-50 justify-between mr-4">
+      <div tw="flex flex-col w-full h-full bg-green-50 text-red-800 font-sans">
+        <div tw="flex items-center px-8 pt-4 bg-green-50 justify-between mr-4">
           <div tw="flex items-center">
             <img
               src={userData?.profileImageUrl}
@@ -189,7 +189,7 @@ const frameHandler = frames(async (ctx) => {
           </div>
 
           <div tw="flex flex-col border-2 border-blue-800 p-4">
-            <div tw="text-3xl font-bold mb-4 text-center">Engagement Value</div>
+            <div tw="text-3xl font-bold mb-4 text-center">Cast Action Value</div>
             <div tw="flex flex-col items-center justify-center rounded-lg border-2 mb-4 py-2 bg-pink-50 bg-opacity-90">
               <span tw="text-2xl">Like</span>
               <div tw="flex text-4xl">{userData?.socialCapitalScore}</div>
@@ -208,7 +208,7 @@ const frameHandler = frames(async (ctx) => {
             </div>
           </div>
           <div tw="flex flex-col border-2 border-blue-800 p-4">
-            <div tw="text-3xl font-bold mb-4 text-center">Moxie Earnings</div>
+            <div tw="text-3xl font-bold mb-4 text-center">Earned Moxie</div>
             <div tw="flex flex-col items-center justify-center rounded-lg border-2 mb-4 py-2 bg-pink-50 bg-opacity-90">
               <span tw="text-2xl">Today</span>
               <span tw="text-4xl">
@@ -226,7 +226,7 @@ const frameHandler = frames(async (ctx) => {
               </span>
             </div>
             <div tw="flex flex-col items-center justify-center rounded-lg border-2 py-2 bg-pink-50 bg-opacity-90">
-              <span tw="text-2xl">Lifetime</span>
+              <span tw="text-2xl">TOTAL</span>
               <span tw="text-4xl">
                 {formatNumber(
                   parseFloat(moxieData?.lifetime.allEarningsAmount || "0")
@@ -236,7 +236,7 @@ const frameHandler = frames(async (ctx) => {
           </div>
         </div>
         <div tw="flex justify-between bg-blue-800 text-white w-full px-4 py-1 mt-4">
-          <div tw="flex text-2xl ">Moxie Stats Demo Frame</div>
+          <div tw="flex text-2xl ">Moxie Statistic Frame</div>
 
           <div tw="flex text-2xl">by @zeni.eth</div>
         </div>
