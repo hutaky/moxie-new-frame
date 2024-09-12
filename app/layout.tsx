@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Moxie Stats Demo Frame",
-  description: "Use this frame to create more moxie frames",
+  title: "Moxie Stats Frame",
+  description: "Use this frame to get your Moxie stats",
 };
 
 export default function RootLayout({
