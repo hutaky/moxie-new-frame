@@ -10,9 +10,9 @@ export const GET = async (req: NextRequest) => {
       type: "post",
     },
     icon: "pulse",
-    name: "Moxie Statistic Frame",
+    name: "Earned Moxie",
     aboutUrl: `${appURL()}`,
-    description: "Use this as a base tocheck your earned Moxies",
+    description: "Check your Moxie income",
   });
 };
 
