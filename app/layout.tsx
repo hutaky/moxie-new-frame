@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Moxie Stats Frame",
-  description: "Use this frame to get your Moxie stats",
+  description: "Get your Moxie stats",
 };
 
 export default function RootLayout({
