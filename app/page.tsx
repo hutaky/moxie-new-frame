@@ -18,11 +18,11 @@ export async function generateMetadata({
   const castActionUrl = new URL("/api/cast-action", appURL());
 
   return {
-    title: "Earned Moxie",
-    description: "check your income.",
+    title: "Moxie Stats Frame Demo",
+    description: "use this as a building block for frames.",
     openGraph: {
-      title: "Earned Moxie",
-      description: "check your income.",
+      title: "MoxieDemo",
+      description: "use this as a building block for frames.",
       images: [`${framesUrl.origin}/api/og`],
     },
     other: {
@@ -33,5 +33,5 @@ export async function generateMetadata({
 }
 
 export default function Page() {
-  return <span>Loading Moxie checker...</span>;
+  return <span>Loading Moxie Demo...</span>;
 }
