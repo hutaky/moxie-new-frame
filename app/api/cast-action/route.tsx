@@ -1,4 +1,4 @@
-//app/api/cast-action/route.ts
+// app/api/cast-action/route.ts
 import { NextRequest } from "next/server";
 import { appURL } from "../../utils";
 import { frames } from "../../frames/frames";
@@ -10,9 +10,9 @@ export const GET = async (req: NextRequest) => {
       type: "post",
     },
     icon: "pulse",
-    name: "Earned Moxie",
+    name: "Moxie Demo Frame",
     aboutUrl: `${appURL()}`,
-    description: "Check your Moxie income",
+    description: "Use this as a base to build moxie stats frames",
   });
 };
 
