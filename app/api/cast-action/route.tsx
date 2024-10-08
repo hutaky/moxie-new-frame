@@ -1,7 +1,7 @@
-https://moxie-earned-frame.vercel.app/app/api/cast-action/route.ts
+//https://moxie-earned-frame.vercel.app/app/api/cast-action/route.ts
 import { NextRequest } from "next/server";
-import { appURL } from "../../utils";
-import { frames } from "../../frames/frames";
+import { appURL } from "https://moxie-earned-frame.vercel.app/../utils";
+import { frames } from "https://moxie-earned-frame.vercel.app///../frames/frames";
 import { castAction, castActionFrame } from "frames.js/core";
 
 export const GET = async (req: NextRequest) => {
