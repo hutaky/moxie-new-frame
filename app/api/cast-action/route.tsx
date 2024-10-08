@@ -1,4 +1,4 @@
-// app/api/cast-action/route.ts
+https://moxie-earned-frame.vercel.app/app/api/cast-action/route.ts
 import { NextRequest } from "next/server";
 import { appURL } from "../../utils";
 import { frames } from "../../frames/frames";
